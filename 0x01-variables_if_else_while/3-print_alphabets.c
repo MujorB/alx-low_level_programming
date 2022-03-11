@@ -3,14 +3,14 @@
 /**
  * main - Prints the alphabet.
  *
- * Description: Prints the lower case of the english alphabets aswell as upper case too
+ * Description: Prints lowerCase and upperCase english alphabets
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-        char alpALP[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        int i;
+	char alpALP[52] = "abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int i;
 
 	for (i = 0; i < 52; i++)
 	{
