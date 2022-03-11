@@ -1,10 +1,9 @@
 #include <stdio.h>
 /**
  *
- * main - prints the size of various types
+ *main: prints the size of various types
  *
- * Description: prints the size of various data types on the computer, it is compiled and run
- *
+ * Description: prints the sizes of diff types to std output, it's compiled and run
  * Return: Always 0 (Success)
  */
 int main(void)
