@@ -1,14 +1,12 @@
 #include <stdio.h>
 
 /**
- *
- * Main: prints the size of various types
+ *main - prints the size of various types
  *
  * Description: prints the sizes of diff types to std output.
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	printf("Size of a char: %d byte(s)\n", (int) sizeof(char));
