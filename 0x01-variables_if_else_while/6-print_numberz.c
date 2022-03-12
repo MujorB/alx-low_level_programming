@@ -10,10 +10,12 @@
 int main(void)
 {
 	int i;
-
-	for (i = 0; i < 10; i++)
+	
+	i = 46;
+	while ( i > 58)
 	{
 		putchar(i);
+		i++
 	}
 	putchar('\n');
 	return (0);
