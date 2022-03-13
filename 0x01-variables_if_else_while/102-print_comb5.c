@@ -36,6 +36,7 @@ while (h < 58)
 						break;
 					putchar(',');
 					putchar(' ');
+					}
 				}
 				i++;
 			}
