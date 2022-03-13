@@ -34,12 +34,12 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
-				g+;
+				g++;
 			}
 			i++;
 		}		
 		e++;
 	}
-	putchar'\n');
+	putchar('\n');
 	return (0);
 }
