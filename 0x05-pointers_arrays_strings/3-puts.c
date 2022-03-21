@@ -10,12 +10,15 @@
 int main(void)
 {
 
-	i = 0;
-
-	while (str[i] != '\0')
+	void _puts(char *str)
 	{
-		_putchar(str[i]);
-		++a;
+
+		i = 0;
+		while (str[i] != '\0')
+		{
+			_putchar(str[i]);
+			++a;
+		}
 	}
 
 }
