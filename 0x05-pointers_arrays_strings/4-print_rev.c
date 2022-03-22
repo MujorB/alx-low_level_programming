@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
- *
  * print_rev - prints string backwards
  *
  * @s: string
