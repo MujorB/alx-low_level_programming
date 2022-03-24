@@ -9,10 +9,10 @@
  *
  * Return: 0
  */
-int main(void)
+char _strcat(char *dest, char *src)
 {
 
-	char *contanate = _strcat(char *dest, char *src);
+	char *contanate = strcat(char dest, char src);
 
-	reteurn(0);
+	return(contanate);
 }
