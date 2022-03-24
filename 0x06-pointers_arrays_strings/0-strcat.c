@@ -13,7 +13,7 @@
 char *_strcat(char *dest, char *src)
 {
 
-	char *contacat = strcat(char dest, char src);
+	char *contacat = strcat(dest, src);
 
 	return (contacat);
 }
