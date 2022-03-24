@@ -11,10 +11,10 @@
  *
  * Return: 0
  */
-char _strcat(char *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
 
-	char *contanate = strcat(char dest, char src);
+	char *contacanate = strcat(char dest, char src);
 
-	return (contanate);
+	return (contacanate);
 }
