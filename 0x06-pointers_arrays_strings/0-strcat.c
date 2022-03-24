@@ -1,5 +1,5 @@
-#include <string.h>
 #include "main.h"
+#include <string.h>
 
 /**
  * _strcat - To print two diff strings together
@@ -13,7 +13,7 @@
 char *_strcat(char *dest, char *src)
 {
 
-	char *contacanate = strcat(char dest, char src);
+	char *contacat = strcat(char dest, char src);
 
-	return (contacanate);
+	return (contacat);
 }
