@@ -15,7 +15,7 @@
 char *_strncat(char *dest, char *src, int n)
 {
 
-	char *_n_contacanate = _strncat(dest, src)
+	char *_n_contacanate = _strncat(dest, src, int n)
 
 	return (_n_contacanate);
 
