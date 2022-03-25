@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
- *
  * leet - this program creates a function that substitute
  *
  * a or A for 4 ascii 52, e or E for 3 ascii 51, o or  O for 0 ascii
