@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * cap_string - capitalizes all words of a string
+ * cap_string - this function capitalize all words
  *
- * @s: input string.
+ * @s: a pointer of a string
  *
- * Return: the pointer to dest.
+ * Return: Return the pointer to dest
  */
 char *cap_string(char *s)
 {
@@ -21,17 +21,17 @@ char *cap_string(char *s)
 	while (*(s + count) != '\0')
 	{
 		for (i = 0; i < 13; i++)
-	{
-		if (*(s + count) == sep_words[i])
 		{
-			if ((*(s + (count + 1)) >= 97) && (*(s + (count + 1)) <= 122))
+			if (*(s + count) == sep_words[i])
 			{
-				(*s + (count + 1)) = *(s + (count + 1)) - 32;
+				if ((*(s + (count + 1)) >= 97) && (*(s + (count + 1)) <= 122))
+				{
+					*(s + (count + 1)) = *(s + (count + 1)) - 32;
+				}
+				break;
 			}
-			break;
+			count++;
 		}
-		count++;
-	}
 	return (s);
 
 }
