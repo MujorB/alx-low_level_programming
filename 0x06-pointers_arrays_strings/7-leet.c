@@ -1,32 +1,38 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * leet - encodes a string into 1337
  *
- * @s: input string.
+ * leet - this program creates a function that substitute
  *
- * Return: the pointer to dest.
+ * a or A for 4 ascii 52, e or E for 3 ascii 51, o or  O for 0 ascii
+ *
+ * 48, t or T for 7 ascii 55 and l or L for 1 ascii 49
+ *
+ * @m: is a pointer that points to an array
+ *
+ * Return: The numbers for the alphabets respectively (Success)
  */
-char *leet(char *s)
+char *leet(char *m)
 {
 
-	int count = 0, i;
-	int low_letters[] = {97, 101, 111, 116, 108};
-	int upp_letters[] = {65, 69, 79, 84, 76};
-	int numbers[] = {52, 51, 48, 55, 49};
+	int count = 0;
+	char uppercase[] = "AEOTL";
+	char lowercase[] = "aeotl";
+	char number[] = "43071";
+	int i;
 
-	while (*(s + count) != '\0')
+	while (*(m + count) != '\0')
 	{
 		for (i = 0; i < 5; i++)
 		{
-			if (*(s + count) == low_letters[i] || *(s + count) == upp_letters[i])
+			if ((*(m + count) == uppercase[i]) || (*(m + count) == lowercase[i]))
 			{
-				*(s + count) = numbers[i];
+				*(m + count) = number[i];
 				break;
 			}
 		}
 		count++;
 	}
-	return (s);
+	return (m);
 
 }
