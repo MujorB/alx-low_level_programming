@@ -9,7 +9,7 @@
  *
  * Return: (0) on success.
  */
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
 
 	puts(argv[1]);
