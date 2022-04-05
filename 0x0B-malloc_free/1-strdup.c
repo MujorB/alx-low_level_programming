@@ -12,10 +12,12 @@ char *_strdup(char *str)
 {
 	char *pstr;
 	int i;
-	int len;
+	int len = 0;
 
-	len = sizeof(str) / sizeof(str[0]);
-
+	while (str[len])
+	{
+		len++;
+	}
 	if (str == NULL)
 		return (NULL);
 
