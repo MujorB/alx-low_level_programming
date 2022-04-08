@@ -19,20 +19,19 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int len_sum;
 
 	if (s1 == NULL)
-		s1 = " ";
+		s1 = "";
 	if (s2 == NULL)
-		s2 = " ";
-
+		s2 = "";
 	while (s1[len_1])
 		len_1++;
 	while (s2[len_2])
 		len_2++;
-	if (n > len_2)
+	if (n >= len_2)
 		n = len_2;
 	else
 		len_2 = n;
 	len_sum = (len_1 + len_2);
-	ptr_nConcat = malloc(sizeof(char *) * len_sum + 1);
+	ptr_nConcat = malloc(sizeof(char) * len_sum + 1);
 
 	if (ptr_nConcat == NULL)
 		return (NULL);
@@ -47,6 +46,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		i++;
 		j++;
 	}
+	*(ptr_nConcat + i) = '\0';
 	return (ptr_nConcat);
+	free(ptr_nConcat);
 
 }
