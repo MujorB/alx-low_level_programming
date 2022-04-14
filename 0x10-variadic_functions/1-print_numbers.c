@@ -9,9 +9,11 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
+
+	va_list(arg_index);
 	unsigned int i;
 	int nums;
-	va_list(arg_index);
+
 	va_start(arg_index, n);
 
 	for (i = 0; i < n; i++)
@@ -22,5 +24,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			printf("%s", separator);
 	}
 	printf("\n");
+	va_end(arg_index);
 
 }
