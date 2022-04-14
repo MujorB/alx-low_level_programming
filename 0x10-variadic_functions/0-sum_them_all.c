@@ -1,4 +1,4 @@
-#include "variadic_funtions.h"
+#include "variadic_functions.h"
 
 /**
  * sum_them_all - function to add n numbers of its arguments
@@ -12,18 +12,19 @@ int sum_them_all(const unsigned int n, ...)
 
 	va_list arg_index;
 	int sum, nums;
-	int i;
+	unsigned int i;
 
 	if (n == 0)
 		return (0);
-	va_start (arg_index, n)
+	va_start(arg_index, n);
+
 	for (i = 0; i < n; i++)
 	{
-		nums = va_arg (arg_index, int);
-		sum += nums;
+		nums = va_arg(arg_index, int);
+		sum = sum + nums;
 	}
 	va_end(arg_index);
 
-	retrun (sum);
+	return (sum);
 
 }
