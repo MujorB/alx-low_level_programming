@@ -15,20 +15,18 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	char *str;
 
 	va_start(str_arg, n);
-	if (n == 0)
+
+	for (i = 0; i < n; i++)
 	{
+		str = va_arg(str_arg, char *);
+		if (!str)
+			printf("(nil)");
+		else
+			printf("%s", str);
 		if (!separator)
 			separator = "";
-		for (i = 0; i < n; i++)
-		{
-			str = va_arg(str_arg, char *);
-			if (!str)
-				printf("(nil)");
-			else
-				printf("%s", str);
-			if (i <  n - 1)
-				printf("%s", separator);
-		}
+		if (i <  n - 1)
+			printf("%s", separator);
 	}
 	printf("\n");
 	va_end(str_arg);
