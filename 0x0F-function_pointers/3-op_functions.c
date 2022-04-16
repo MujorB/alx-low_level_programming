@@ -19,11 +19,11 @@ int op_mod(int a, int b)
  * @a: an int.
   5  * @b: an int.
   6  *
-  7  * Return: the results of the operation * Return: the results of the operation
+  7  * Return: the results of the operation
  */
 int op_div(int a, int b)
 {
-	return(a / b);
+	return (a / b);
 }
 
 /**
