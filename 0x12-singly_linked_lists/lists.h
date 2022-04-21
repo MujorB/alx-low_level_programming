@@ -1,5 +1,5 @@
-#ifndef _MAIN_H_
-#define _MAIN_H_
+#ifndef _LISTS_H_
+#define _LISTS_H_
 
 void free_list(list_t *head);
 list_t *add_node_end(list_t **head, const char *str);
