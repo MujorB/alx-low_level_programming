@@ -14,7 +14,7 @@ int pop_listint(listint_t **head)
 	listint_t *nodeToDel;
 
 	if (*head == NULL)
-		return (NULL);
+		return (0);
 
 	nodeToDel = *head;
 	headNodeData = nodeToDel->n;
