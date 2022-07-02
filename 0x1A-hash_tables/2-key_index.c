@@ -1,36 +1,21 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_get - Get the value from a hash table
+ * key_index - Gives you the index of a key.
  *
- * @ht: Hash table to search into. (hash_table_t *)
+ * @key: Pointer to the key (unsigned char *).
  *
- * @key: Key you are looking for. (char *)
+ * @size: Size of the hash table.
  *
- * Return: The value founded by key, NULL otherwise.
+ * Return: The index of the key in the hash table.
  */
 
-char *hash_table_get(const hash_table_t *ht, const char *key)
+unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
-	unsigned long int index = 0;
-	hash_node_t *node = NULL;
-	hash_node_t *tmp = NULL;
+    unsigned long int index = 0;
 
-	if (!ht || !ht->array || !key)
-		return (NULL);
+    index = hash_djb2(key);
+    index %= size;
 
-	index = key_index((unsigned char *)key, ht->size);
-
-	node = ht->array[index];
-	if (!node)
-		return (NULL);
-
-	if (strcmp(node->key, key) == 0)
-		return (node->value);
-
-	for (tmp = node; tmp; tmp = tmp->next)
-		if (strcmp(tmp->key, key) == 0)
-			return (tmp->value);
-
-	return (NULL);
+    return (index);
 }
