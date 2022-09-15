@@ -8,7 +8,7 @@
  * Return: Always 0 (Success)
  */
 int main(void)
-{	
+{
 	char alphABETs;
 
 	for (alphABETs = 'a'; alphABETs <= 'z'; alphABETs++)
