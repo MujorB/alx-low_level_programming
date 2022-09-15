@@ -8,12 +8,14 @@
  * Return: Always 0 (Success)
  */
 int main(void)
-{
-	for (char alphABETs = 'a'; alphABETs <= 'z'; alphABETs++)
+{	
+	char alphABETs;
+
+	for (alphABETs = 'a'; alphABETs <= 'z'; alphABETs++)
 	{
 		putchar(alphABETs);
 	}
-	for (char alphABETs = 'A'; alphABETs <= 'Z'; alphABETs++)
+	for (alphABETs = 'A'; alphABETs <= 'Z'; alphABETs++)
 	{
 		putchar(alphABETs);
 	}
