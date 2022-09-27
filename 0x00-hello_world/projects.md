@@ -1,15 +1,17 @@
- - Hello, World
-C
- By: Julien Barbier
- Weight: 1
- Project over - took place from Mar 10, 2022 6:00 AM to Mar 11, 2022 6:00 AM
- An auto review will be launched at the deadline
+# 0x00. C - Hello, World
+### **`C`**
+```
+By: Julien Barbier
+Weight: 1
+Project over - took place from Mar 10, 2022 6:00 AM to Mar 11, 2022 6:00 AM
+An auto review will be launched at the deadline
 In a nutshell…
 Auto QA review: 41.0/41 mandatory & 7.8/12 optional
 Altogether:  165.0%
 Mandatory: 100.0%
 Optional: 65.0%
 Calculation:  100.0% + (100.0% * 65.0%)  == 165.0%
+```
 Concepts
 For this project, we expect you to look at this concept:
 
