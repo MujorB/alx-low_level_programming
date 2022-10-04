@@ -9,13 +9,17 @@
  */
 int main(void)
 {
-	char alp[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	int i;
+	char alphABETs;
 
-	for (i = 0; i < 52; i++)
+	for (alphABETs = 'a'; alphABETs <= 'z'; alphABETs++)
 	{
-		putchar(alp[i]);
+		putchar(alphABETs);
 	}
-	putchar(10);
+	for (alphABETs = 'A'; alphABETs <= 'Z'; alphABETs++)
+	{
+		putchar(alphABETs);
+	}
+	putchar('\n');
+
 	return (0);
 }
